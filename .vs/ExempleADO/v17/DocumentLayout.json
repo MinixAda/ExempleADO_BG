@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\stgadmin\\Desktop\\ExempleADO_BG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C9E01566-7D5C-44F3-9059-D54C5881C890}|Models\\Models.csproj|c:\\users\\stgadmin\\desktop\\exempleado_bg\\models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E01566-7D5C-44F3-9059-D54C5881C890}|Models\\Models.csproj|solutionrelative:models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4AAAF949-FB60-468A-8B6F-3DEE701E8AE5}|ExempleADO\\ExempleADO.csproj|c:\\users\\stgadmin\\desktop\\exempleado_bg\\exempleado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AAAF949-FB60-468A-8B6F-3DEE701E8AE5}|ExempleADO\\ExempleADO.csproj|solutionrelative:exempleado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\stgadmin\\Desktop\\ExempleADO_BG\\Models\\Class1.cs",
+              "RelativeDocumentMoniker": "Models\\Class1.cs",
+              "ToolTip": "C:\\Users\\stgadmin\\Desktop\\ExempleADO_BG\\Models\\Class1.cs",
+              "RelativeToolTip": "Models\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T13:31:36.124Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -42,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\stgadmin\\Desktop\\ExempleADO_BG\\ExempleADO\\Program.cs",
               "RelativeDocumentMoniker": "ExempleADO\\Program.cs",
               "ToolTip": "C:\\Users\\stgadmin\\Desktop\\ExempleADO_BG\\ExempleADO\\Program.cs",
               "RelativeToolTip": "ExempleADO\\Program.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T09:08:24.74Z",
               "EditorCaption": ""

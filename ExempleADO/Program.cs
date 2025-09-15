@@ -89,3 +89,66 @@ catch (SqlException ex)
     Console.WriteLine($"Erreur de fermeture de connexion DB {ex.Message}");
 }
 
+// insertion d'une joke
+
+//connexion
+DbConnection oCon = new SqlConnection(connectionString);
+//connexion
+//string connectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = ExempleADO; Integrated Security = True; Connect Timeout = 30; Encrypt = False; Trust Server Certificate=False; Application Intent = ReadWrite; Multi Subnet Failover=False";
+
+// ouvrir
+try
+
+{
+    oCon.Open();
+
+}
+
+
+catch (SqlException sqlex)
+
+{
+    Console.WriteLine(sqlex.Message);
+
+}
+
+//Si je suis connecté
+if (oCon.State == System.Data.ConnectionState.Closed)
+
+{
+    // commande
+    DbCommand insertCommand = oCon.CreateCommand();
+
+    string titre = "L'histoire du scout";
+    string body = "CENSURE";
+
+
+    //requête
+    string maRequete = @"Insert into Jokes (Title, Body) values (@monTitre, @Body)";
+
+    /*DbParameter param = new SqlParameter();
+    param.ParameterName = "monTitre";
+    param.Value = titre;*/
+    
+    // version longue
+    DbParameter param2 = new SqlParameter();
+    param2.ParameterName = "body";
+    param2.Value = body;
+
+   //des infos à insérer
+
+   insertCommand.CommandText = maRequete;
+   insertCommand.Parameters.Add(new SqlParameter("Mon titre", titre));
+   insertCommand.Parameters.Add(param2);  
+    
+    // exécuter
+
+
+    insertCommand.ExecuteNonQuery();
+
+
+}
+
+
+// des infos à insérer
+
