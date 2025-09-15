@@ -2,8 +2,11 @@
 // 1. Me connnecter à la db
 /* Définir le chemin contenant l'IP, les infos d'authentification, etc.*/
 using Microsoft.Data.SqlClient;
+using System;
 using System.Data;
 using System.Data.Common;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 // clic droit sur db, properties, string connection
 string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ExempleADO;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
@@ -17,7 +20,7 @@ try
     * Vérifier que l'on est connecté
     * */
     connexion.Open();
-   
+
 
 }
 
@@ -85,3 +88,58 @@ catch (SqlException ex)
 {
     Console.WriteLine($"Erreur de fermeture de connexion DB {ex.Message}");
 }
+
+// insertion d'une joke
+
+//connexion
+DbConnection oCon = new SqlConnection(connectionString);
+//connexion
+//string connectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = ExempleADO; Integrated Security = True; Connect Timeout = 30; Encrypt = False; Trust Server Certificate=False; Application Intent = ReadWrite; Multi Subnet Failover=False";
+
+// ouvrir
+try
+
+{
+    oCon.Open();
+
+}
+
+
+catch (SqlException sqlex)
+
+{
+    Console.WriteLine(sqlex.Message);
+
+}
+
+//Si je suis connecté
+if (oCon.State == System.Data.ConnectionState.Closed)
+
+{
+    // commande
+    DbCommand insertCommand =oCon.CreateCommand();
+
+   // string titre = "L'histoire du scout";
+   // string body ="CENSURE"
+
+
+    //requête
+    string maRequete = @"
+
+
+
+";
+
+
+    //des infos à insérer
+
+    insertCommand.CommandText = maRequete;
+    // exécuter
+    insertCommand.ExecuteNonQuery();
+
+
+}                     
+
+
+// des infos à insérer
+
